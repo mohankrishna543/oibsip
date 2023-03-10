@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    background-color:red;
+    padding:30px;
+  }
+  nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+  text-decoration: underline;
+  }
+  
+/* Set up some variables for consistent use of colors and fonts */
+:root {
+  --primary-color: #4B0082; /* Dark purple */
+  --secondary-color: #FFD700; /* Gold */
+  --body-font: 'Open Sans', sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
+/* Style the main content container */
+main {
+  margin-top: 80px;
+}
+
+/* Style the sections */
+section {
+  margin-bottom: 50px;
+}
+
+/* Style the about section */
+.about {
+  background-color: var(--secondary-color);
+  padding: 50px;
+  text-align:center;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color:#444;
+  font-family: 'Poppins',sans-serif;
+}
+
+.about p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color:#777;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color:#005959;
+}
+
+/* Style the profile section */
+.profile {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: #777;
+    font-family: 'Open Sans', sans-serif;
+}
+
+  .certificates {
+  background-color: #f2f2f2;
+  padding: 50px;
+  }
+  
+  .certificates h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  }
+  
+  .certificates ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .certificates li {
+  margin: 10px;
+  }
+  
+  .certificates img {
+  max-width: 200px;
+  }
+  
+  .work-experience {
+  background-color: #fff;
+  padding: 50px;
+  }
+  
+  .work-experience h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  }
+  
+  .work-experience ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .work-experience li {
+  margin-bottom: 20px;
+  }
+  
+  .work-experience h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  .work-experience p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+  
+  .skills {
+  background-color: #f2f2f2;
+  padding: 50px;
+  }
+  
+  .skills h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  }
+  
+  .skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  .skills li {
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .skills li img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  }
+  
+  .skills li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+
+.skills li p {
+font-size: 18px;
+line-height: 1.5;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 30px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+font-size: 16px;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}

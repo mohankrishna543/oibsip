@@ -1,0 +1,919 @@
+/* Styling for the body element */
+body {
+background-color: #f1f1f1;
+font-family: Arial, sans-serif;
+line-height: 1.5;
+color: #333;
+background-color:#F1DBBF;
+}
+     
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #982323;
+  font-family:Comic Sans MS;
+  color:rgb(244, 13, 21);
+  padding:right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  padding:right;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #F99417;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+/* Responsive design */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/* Sticky navigation bar */
+/* Add a box shadow to the navigation bar */
+nav {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add a hover effect to the navigation bar */
+  nav:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Add a border radius to the navigation links */
+  nav li a {
+  border-radius: 5px;
+  }
+  
+  /* Add an active class to the current link */
+  nav li.active a {
+  background-color: #111;
+  color: #fff;
+  }
+  
+  /* Add a dropdown menu */
+  nav ul li.dropdown {
+  position: relative;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  nav ul li.dropdown ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #956565;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  nav ul li.dropdown:hover ul {
+  display: block;
+  }
+  
+  nav ul li.dropdown ul li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  }
+  
+  nav ul li.dropdown ul li a {
+  padding: 10px;
+  color: #333;
+  }
+  
+  nav ul li.dropdown ul li a:hover {
+  background-color: #f1f1f1;
+  }
+  nav ul li.dropdown:hover > a {
+    background-color: #555;
+    color: #fff;
+  }
+  nav form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  nav input[type="text"] {
+    border: none;
+    background-color: #d24747;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  nav input[type="submit"] {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  
+  /* Add a mobile navigation menu */
+  @media screen and (max-width: 768px) 
+  nav {
+  position: static;
+  box-shadow: none;
+  }
+  
+  nav ul {
+  flex-direction: column;
+  }
+  
+  nav li {
+  margin: 10px 0;
+  }
+  
+ .menu-icon {
+  display: block;
+  font-size: 1.5rem;
+  color: #d10d0d;
+  text-align: right;
+  cursor: pointer;
+  }
+   
+  .menu-icon:hover {
+  color: #f1f1f1;
+  }
+  
+  #menu-toggle {
+  display: none;
+  }
+  
+  #menu-toggle:checked ~ nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #93e716;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  }
+  
+  #menu-toggle:checked ~ nav ul li {
+  margin: 2px 0;
+  }
+  
+  #menu-toggle:checked ~ nav ul li a {
+  font-size: 1.2rem;
+  color: #fff;
+  }
+  
+  
+  /* Add a back to top button */
+  .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  }
+  
+  .back-to-top:hover {
+  background-color: #111;
+  }
+  
+  .back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  }
+  
+  /* Responsive design */
+  main {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc
+  }
+  @media screen and (max-width: 600px) {
+  nav ul {
+  flex-direction: column;
+  }}
+  
+  
+
+/* Styling for the navigation bar */
+nav {
+background-color: #ECF9FF;
+overflow: hidden;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 10px 5px;
+}
+
+nav a {
+color: white;
+text-align: center;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+background-color: #555;
+}
+
+nav .logo {
+font-size: 2rem;
+font-weight: bold;
+}
+
+/* Styling for the table */
+table {
+border-collapse: collapse;
+width: 100%;
+margin: 20px 0;
+}
+
+table td, table th {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #333;
+color: white;
+}
+
+table tr:nth-child(even){
+background-color: #f2f2f2;
+}
+
+table tr:hover {
+background-color: #ddd;
+cursor: pointer;
+}
+
+/* Styling for the education and work exparience sections */
+ul, ol {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin-bottom: 10px;
+}
+
+/* Styling for the links */
+a {
+color: #337ab7;
+text-decoration: none;
+}
+
+a:hover {
+color: #23527c;
+text-decoration: underline;
+}
+
+/* Styling for the buttons */
+button {
+background-color: #337ab7;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+background-color: #23527c;
+}
+/*.certificates {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.certificates h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+.certificates ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.certificates li {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #555;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.certificates li:before {
+  content: "\2022";
+  color: #ff9900;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.certificates button {
+  background-color: #ff9900;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.certificates button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.certificates:after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
+<style>
+/* Style for the certificates section */
+.certificates {
+  background-color: #f5f5f5;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+/* Style for the certificates section title */
+.certificates h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Style for the certificate list */
+.certificates ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Style for the certificate items */
+.certificates li {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Style for the certificate item hover state */
+.certificates li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+}
+
+/* Style for the certificate item title */
+.certificates li h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for the certificate item description */
+.certificates li p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* Style for the certificate item link */
+.certificates li a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Style for the certificate item link hover state */
+.certificates li a:hover {
+  background-color: #0069d9;
+}
+
+@media (max-width: 768px) {
+  /* Style for the certificate items on smaller screens */
+  .certificates li {
+    width: calc(50% - 20px);
+  }
+}
+</style>
+
+<section class="certificates">
+  <h3>Certificates</h3>
+  <ul>
+    <li>
+      <h4>Certificate 1</h4>
+      <p>Description of certificate 1 goes here.</p>
+      <a href="#">View certificate</a>
+    </li>
+    <li>
+      <h4>Certificate 2</h4>
+      <p>Description of certificate 2 goes here.</p>
+      <a href="#">View certificate</a>
+    </li>
+    <li>
+      <h4>Certificate 3</h4>
+      <p>Description of certificate 3 goes here.</p>
+      <a href="#">View certificate</a>
+    </li>
+  </ul>
+</section>
+
+/* Style the work experience section */
+/*.work-experience {
+  background-color: var(--secondary-color);
+  padding: 50px;
+  }
+  
+  .work-experience h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  }
+  
+  .work-experience ul {
+  margin-bottom: 30px;
+  }
+  
+  .work-experience li {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: var(--body-font);
+  position: relative;
+  padding-left: 30px;
+  }
+  
+  .work-experience li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  }
+  
+  .work-experience p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: var(--body-font);
+  }
+  
+  .work-experience .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .work-experience button {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  font-family: var(--body-font);
+  }
+  
+  /* Hover effect on the job titles 
+  .work-experience li:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  }
+  
+  .work-experience li:hover:before {
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  }
+  
+  .work-experience li:hover a {
+  color: #fff;
+  }
+  
+  .work-experience li:hover .date {
+  color: #fff;
+  }
+  
+  .work-experience li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  }
+  
+  .work-experience li .date {
+  color: var(--primary-color);
+  font-style: italic;
+  margin-left: 10px;
+  font-family: var(--body-font);
+  }
+  
+  .work-experience button:hover {
+  background-color: #23527c;
+  }
+/*
+  .projects {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 1233px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .projects h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    }
+    
+    .projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .projects li {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    }
+    
+    .projects li:before {
+    content: "\2022";
+    color: #ff9900;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    }
+    
+    .projects button {
+    background-color: #ff9900;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    }
+    
+    .projects button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    }
+    
+    .projects:after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+*/
+/* Styling for the form inputs */
+
+input[type="text"], input[type="email"], textarea {
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+width: 100%;
+margin-bottom: 10px;
+}
+
+input[type="submit"] {
+background-color: #337ab7;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+background-color: #23527c;
+}
+
+/* Styling for the footer */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+}
+
+footer p {
+margin: 0;
+}
+
+<style>
+/* Style for the project section */
+#projects {
+  background-color: #f5f5f5;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+/* Style for the project section title */
+#projects h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Style for the project list */
+#projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Style for the project items */
+#projects li {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Style for the project item hover state */
+#projects li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+}
+
+/* Style for the project item title */
+#projects li h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the project item description */
+#projects li p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Style for the project item link */
+#projects li a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Style for the project item link hover state */
+#projects li a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  /* Style for the project items on smaller screens */
+  #projects li {
+    width: calc(50% - 20px);
+  }
+}
+</style>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <ul>
+    <li>
+      <h4>Project 1</h4>
+      <p>Description of project 1 goes here.</p>
+      <a href="#">View project</a>
+    </li>
+    <li>
+      <h4>Project 2</h4>
+      <p>Description of project 2 goes here.</p>
+      <a href="#">View project</a>
+    </li>
+    <li>
+      <h4>Project 3</h4>
+      <p>Description of project 3 goes here.</p>
+      <a href="#">View project</a>
+    </li>
+  </ul>
+</section>
+<style>
+
+  #work-experience {
+    margin-top: 50px;
+  }
+  
+  #work-experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #work-experience th,
+  #work-experience td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #work-experience th {
+    background-color: #f2f2f2;
+  }
+  
+  #work-experience td {
+    font-weight: normal;
+  }
+*
+#work-experience {
+  margin: 50px 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+thead {
+  background-color: #f5f5f5;
+}
+
+th {
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+display: block;
+}
+
+/* Hide table headers */
+thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+
+tr {
+margin-bottom: 15px;
+}
+
+td {
+/* Add borders to separate rows */
+border: none;
+border-bottom: 1px solid #eee;
+position: relative;
+padding-left: 50%;
+}
+
+td:before {
+/* Add content from data attribute */
+content: attr(data-label);
+position: absolute;
+left: 0;
+width: 50%;
+padding-left: 10px;
+font-weight: bold;
+}
+}
